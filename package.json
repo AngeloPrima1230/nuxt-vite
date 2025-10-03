@@ -1,44 +1,45 @@
 {
   "scripts": {
-    "dev": "vike dev",
+    "dev": "vike dev --host",
     "build": "vike build",
     "preview": "cross-env NODE_ENV=production tsx ./hono-entry.node.ts",
     "lint": "eslint ."
   },
   "dependencies": {
-    "vike": "^0.4.239",
     "@auth/core": "^0.40.0",
-    "@universal-middleware/core": "^0.4.10",
     "@hono/node-server": "^1.19.1",
+    "@universal-middleware/core": "^0.4.10",
     "@universal-middleware/hono": "^0.4.16",
-    "hono": "^4.9.6",
+    "@vite-plugin-vercel/vike": "^9.0.6",
     "@vitejs/plugin-react": "^5.0.2",
+    "hono": "^4.9.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "telefunc": "^0.2.13",
+    "vike": "^0.4.239",
     "vike-react": "^0.6.5",
-    "telefunc": "^0.2.12",
-    "vite-plugin-vercel": "^9.0.7",
-    "@vite-plugin-vercel/vike": "^9.0.6"
+    "vite-plugin-vercel": "^9.0.7"
   },
   "devDependencies": {
-    "typescript": "^5.9.2",
-    "vite": "^7.1.4",
-    "eslint": "^9.35.0",
     "@eslint/js": "^9.35.0",
-    "typescript-eslint": "^8.42.0",
-    "globals": "^16.3.0",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-react": "^7.37.5",
     "@hono/vite-dev-server": "^0.20.1",
+    "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^20.19.9",
-    "tsx": "^4.20.5",
-    "cross-env": "^10.0.0",
-    "prettier": "^3.6.2",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "cross-env": "^10.0.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4.1.13",
-    "@tailwindcss/vite": "^4.1.13"
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.42.0",
+    "vite": "^7.1.4"
   },
-  "type": "module"
+  "type": "module",
+  "packageManager": "yarn@1.22.22"
 }

@@ -3,22 +3,35 @@ a {
   text-decoration: none;
 }
 #sidebar a {
-  padding: 2px 10px;
-  margin-left: -10px;
+  padding: 8px 12px;
+    margin: 2px 0;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  #sidebar a:hover {
+    background-color: #e5e7eb;
 }
 #sidebar a.is-active {
-  background-color: #eee;
+  background-color: #d1d5db;
+    font-weight: 600;
 }
 
 /* Reset */
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #f9fafb;
 }
 * {
   box-sizing: border-box;
 }
 
+/* Layout Structure */
+.min-h-screen {
+  min-height: 100vh;
+}
 /* Page Transition Animation */
 #page-content {
   opacity: 1;
@@ -26,4 +39,24 @@ body {
 }
 body.page-is-transitioning #page-content {
   opacity: 0;
+}
+
+/* Property Panel Styles */
+.property-panel input[type="number"] {
+  appearance: textfield;
+}
+
+.property-panel input[type="number"]::-webkit-outer-spin-button,
+.property-panel input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Drawing Area */
+.drawing-area {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
